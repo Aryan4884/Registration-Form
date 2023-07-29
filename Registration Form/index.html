@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/b4526113de.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <h2>Registration Form</h2>
+            
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                
+               
+                <input type="text" placeholder="Your Username" id="username"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="Your Email" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Branch</label>
+                <br>
+                <select id="Branch" type="Branch">
+                   
+                    <option value ="Branch">Select Branch</option>
+                    <option value ="architecture">Architecture,Planning and Design</option>
+                    <option value ="biomed">Biomedical Engineering</option>
+                    <option value ="cera">Ceramic Engineering</option>
+                    <option value ="chem">Chemical Engineering</option>
+                    <option value ="civ">Civil Engineering</option>
+                    <option value ="cse">Computer Science and Engineering</option>
+                    <option value ="eee">Electrical Engineering</option>
+                    <option value ="ece">Electronics Engineering</option>
+                    <option value ="mech">Mechanical Engineering</option>
+                    <option value ="min">Mining Engineering</option>
+                    <option value ="phe">Pharmaceutical Engineering</option>
+                    <option value ="bic">Biochemical Engineering</option>
+                    <option value ="ic">Industrial Chemistry</option>
+                    <option value ="msc">Mathematical Sciences</option>
+                    <option value ="mst">Material Science and Technology</option>
+                    <option value ="phy">Physics</option>
+                    <option value ="chemistry">Chemistry</option>
+                </select>
+            
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Phone Number</label>
+                <input type="Phone Number" placeholder="Your Phone Number" id="Phone Number"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+               <p> Your form has been submitted sucessfully.</p>
+                <button type="button">OK</button>
+            </div>
+       
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./index.js"> 
+          
+    </script>
+</body>
+</html>
